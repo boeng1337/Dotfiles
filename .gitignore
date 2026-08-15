@@ -1,0 +1,12 @@
+*
+!.gitignore
+!hypr/
+!hypr/**
+!Thunar/
+!Thunar/**
+!kitty/
+!kitty/**
+!fish/
+!fish/**
+!quickshell/
+!quickshell/**
