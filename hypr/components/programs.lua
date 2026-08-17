@@ -1,3 +1,3 @@
 terminal    = "kitty"
-fileManager = "thunar"
+fileManager = "nautilus"
 menu        = "hyprlauncher"

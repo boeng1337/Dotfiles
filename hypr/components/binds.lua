@@ -11,6 +11,10 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
+-- Quickshell global shortcuts (trigger the shell's registered GlobalShortcuts)
+hl.bind(mainMod .. " + Menu", hl.dsp.global("quickshell:launcher"))
+hl.bind(mainMod .. " + C",     hl.dsp.global("quickshell:controlpanel"))
+
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
@@ -67,4 +71,3 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m window -o /home/maxim/Pictures"))
 hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region -o /home/maxim/Pictures"))
-
